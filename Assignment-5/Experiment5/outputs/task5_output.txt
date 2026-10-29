@@ -1,0 +1,50 @@
+
+======================================================================
+  EXPERIMENT 5 — SECTION C, TASK 5
+  Recursive Task Parallelism: Parallel Merge Sort
+  Array size: 10000000
+  Processors: 32 | Max threads: 32
+======================================================================
+
+======================================================================
+  Part 1: Sequential vs Parallel Merge Sort
+======================================================================
+  Sequential: 0.889760 s  [SORTED ✓]
+  Parallel (32 threads): 0.133677 s  [SORTED ✓]
+  Results match: YES ✓
+
+  Correctness Verification: PASSED
+
+======================================================================
+  Part 2: Thread Scaling Experiment (threshold=1000)
+======================================================================
+Threads     Time (s)          Speedup   Efficiency
+--------------------------------------------------
+1                  0.683449 s      1.00x    1.0000
+2                  0.371773 s      1.84x    0.9192
+4                  0.219928 s      3.11x    0.7769
+8                  0.182181 s      3.75x    0.4689
+32                 0.140932 s      4.85x    0.1515
+[INFO] CSV saved to: results/raw/task5_threads.csv
+
+======================================================================
+  Part 3: Task Granularity Experiment (32 threads)
+======================================================================
+Threshold   Time (s)          Speedup   
+----------------------------------------
+10                 2.716079 s      0.33x
+100                0.414442 s      2.15x
+1000               0.116985 s      7.61x
+10000              0.112369 s      7.92x
+[INFO] CSV saved to: results/raw/task5_threshold.csv
+
+======================================================================
+  Summary
+======================================================================
+  Sequential time:      0.889760 s
+  Best parallel time:   0.133677 s
+  Speedup:              6.66x
+  Efficiency:           0.2080
+  Threads used:         32
+  Task threshold:       1000
+

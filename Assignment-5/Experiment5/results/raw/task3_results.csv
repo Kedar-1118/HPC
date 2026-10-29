@@ -1,0 +1,4 @@
+Version,Time_s,Speedup
+Sequential,0.161855,1.000000
+TaskBased,0.175850,0.920412
+ChunkPipeline,0.060955,2.655328

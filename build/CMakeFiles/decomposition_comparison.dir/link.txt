@@ -1,0 +1,3 @@
+C:\mingw64\bin\cmake.exe -E rm -f CMakeFiles\decomposition_comparison.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\decomposition_comparison.dir/objects.a @CMakeFiles\decomposition_comparison.dir\objects1.rsp
+C:\mingw64\bin\g++.exe  -O2 -Wall -Wextra -g -Wl,--whole-archive CMakeFiles\decomposition_comparison.dir/objects.a -Wl,--no-whole-archive -o bin\decomposition_comparison.exe -Wl,--out-implib,libdecomposition_comparison.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\decomposition_comparison.dir\linkLibs.rsp

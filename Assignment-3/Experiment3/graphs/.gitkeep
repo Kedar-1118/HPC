@@ -1,0 +1,2 @@
+# This directory holds generated performance graphs.
+# Run `make graphs` or `python3 generate_graphs.py` to populate.

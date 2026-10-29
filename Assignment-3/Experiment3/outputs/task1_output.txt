@@ -1,0 +1,73 @@
+
+======================================================================
+  EXPERIMENT 3 — SECTION A, TASK 1: ARRAY SUM
+  Threads available: 32
+======================================================================
+
+======================================================================
+  Array Sum — N = 10000
+======================================================================
+
+Method                   Time (s)          Speedup     Correctness    
+----------------------------------------------------------------------
+Sequential                      0.000029 s
+OpenMP Critical                 0.062517 s        0.00x    CORRECT ✓
+OpenMP Reduction                0.025050 s        0.00x    CORRECT ✓
+
+  Sequential Sum  = 505664.9335
+  Critical Sum    = 505664.9335
+  Reduction Sum   = 505664.9335
+
+======================================================================
+  Array Sum — N = 1000000
+======================================================================
+
+Method                   Time (s)          Speedup     Correctness    
+----------------------------------------------------------------------
+Sequential                      0.001168 s
+OpenMP Critical                 0.027951 s        0.04x    CORRECT ✓
+OpenMP Reduction                0.029618 s        0.04x    CORRECT ✓
+
+  Sequential Sum  = 50505429.3616
+  Critical Sum    = 50505429.3616
+  Reduction Sum   = 50505429.3616
+
+======================================================================
+  Array Sum — N = 10000000
+======================================================================
+
+Method                   Time (s)          Speedup     Correctness    
+----------------------------------------------------------------------
+Sequential                      0.008495 s
+OpenMP Critical                 0.062199 s        0.14x    CORRECT ✓
+OpenMP Reduction                0.038689 s        0.22x    CORRECT ✓
+
+  Sequential Sum  = 505088561.8897
+  Critical Sum    = 505088561.8896
+  Reduction Sum   = 505088561.8896
+
+======================================================================
+  ANALYSIS
+======================================================================
+
+  WHY REDUCTION IS FASTER:
+  ────────────────────────
+  The reduction clause gives each thread a private copy of the sum
+  variable. Threads accumulate into their private copies independently
+  with ZERO synchronization during the loop body. Only at the end of
+  the parallel region does OpenMP combine (reduce) all private copies
+  into the final result using a tree-based merge — O(log P) steps
+  for P threads. This eliminates contention entirely during computation.
+
+  WHY CRITICAL IS A BOTTLENECK:
+  ─────────────────────────────
+  With #pragma omp critical, every thread must acquire a mutex lock
+  before updating the shared sum variable. Even though each thread
+  computes a local partial sum, the critical section serializes the
+  final accumulation step. For P threads, this adds O(P) sequential
+  lock acquisitions, each incurring mutex overhead (context switches,
+  cache invalidation). When the critical section is entered frequently
+  or P is large, threads spend significant time waiting rather than
+  computing — negating the benefit of parallelism.
+
+

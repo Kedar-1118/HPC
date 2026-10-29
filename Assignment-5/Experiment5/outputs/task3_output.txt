@@ -1,0 +1,65 @@
+
+======================================================================
+  EXPERIMENT 5 — SECTION B, TASK 3
+  Parallel Pipeline Using OpenMP Tasks
+  N = 10000000 | Chunks = 16 | Threads: 32
+======================================================================
+
+======================================================================
+  Correctness Verification
+======================================================================
+  Task-Based vs Sequential: MATCH ✓
+  Chunk-Based: Uses per-chunk normalisation (different algorithm).
+               Chunk stats verified internally.
+
+  Correctness Verification: PASSED
+
+======================================================================
+  Pipeline Statistics
+======================================================================
+  Sequential:  Sum=13764806.591305  Min=0.110051  Max=2.534618  Avg=1.376481
+  Task-Based:  Sum=13764806.591305  Min=0.110051  Max=2.534618  Avg=1.376481
+  Chunk-Based: Sum=13764824.165579  Min=0.110051  Max=2.534618  Avg=1.376482
+
+======================================================================
+  Performance
+======================================================================
+Version                  Time (s)          Speedup   Efficiency
+---------------------------------------------------------------
+Sequential                      0.161855 s      1.00x    1.0000
+Task (taskwait)                 0.175850 s      0.92x    0.0288
+Chunk Pipeline                  0.060955 s      2.66x    0.0830
+
+======================================================================
+  Explanation
+======================================================================
+
+  WHY NAIVE TASK PARALLELISM FAILS FOR PIPELINES:
+  ────────────────────────────────────────────────
+  If we create three tasks simultaneously (preprocess, compute,
+  postprocess) WITHOUT taskwait, the computation task may start
+  reading the output buffer BEFORE preprocessing has written to it.
+  This is a classic data-dependency violation:
+
+      Stage 2 reads data that Stage 1 produces.
+      Stage 3 reads data that Stage 2 produces.
+
+  Using #pragma omp taskwait after each stage enforces the
+  correct sequential ordering within a single data stream.
+
+  WHY CHUNK-BASED PIPELINE ACHIEVES SPEEDUP:
+  ───────────────────────────────────────────
+  By dividing the input into independent chunks, each chunk
+  can be processed entirely on a separate thread. Although
+  the three stages are sequential WITHIN each chunk, different
+  chunks run in PARALLEL across threads. With 16 chunks and
+  8 threads, up to 8 chunks execute concurrently.
+
+  PIPELINE VS TASK VS DATA PARALLELISM:
+  ─────────────────────────────────────
+  • Sequential stages   → no parallelism
+  • Independent tasks   → parallel, no dependencies
+  • Dependent tasks     → must use taskwait or depend()
+  • Pipelined tasks     → overlapping stages on different data
+
+[INFO] CSV saved to: results/raw/task3_results.csv

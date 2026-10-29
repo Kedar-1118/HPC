@@ -1,0 +1,79 @@
+
+======================================================================
+  EXPERIMENT 5 — ADVANCED EXPLORATION
+  OpenMP Task Dependencies: depend(in/out) vs taskwait
+  Threads available: 32
+======================================================================
+
+======================================================================
+  Method 1: depend(in/out) Clauses
+======================================================================
+
+  DAG Structure:
+           Task A (produces x)
+          /                  \
+    Task B (x → y)      Task C (x → z)
+          \                  /
+           Task D (needs y, z)
+
+    [Thread 12] Task A started
+    [Thread 12] Task A finished
+    [Thread 12] Task B started
+    [Thread 22] Task C started
+    [Thread 12] Task B finished
+    [Thread 22] Task C finished
+    [Thread 22] Task D started
+    [Thread 22] Task D finished
+
+  Total time (depend): 0.3069 s
+  Ideal time: ~0.3s (A→B→D or A→C→D, B||C)
+
+======================================================================
+  Method 2: taskwait (for comparison)
+======================================================================
+    [Thread 29] Task A started
+    [Thread 29] Task A finished
+    [Thread 29] Task B started
+    [Thread 22] Task C started
+    [Thread 29] Task B finished
+    [Thread 22] Task C finished
+    [Thread 29] Task D started
+    [Thread 29] Task D finished
+
+  Total time (taskwait): 0.3095 s
+
+======================================================================
+  Comparison: depend vs taskwait
+======================================================================
+
+  ┌──────────────────┬──────────────────────────────────────────┐
+  │ Feature          │ depend(in/out)       │ taskwait          │
+  ├──────────────────┼──────────────────────┼───────────────────┤
+  │ Granularity      │ Per-dependency        │ All child tasks   │
+  │ Flexibility      │ Fine-grained DAGs     │ Barrier-like      │
+  │ Complexity       │ Must declare deps     │ Simpler syntax    │
+  │ Scheduling       │ More freedom for RT   │ Fewer options     │
+  │ Best for         │ Complex DAGs          │ Simple fork-join  │
+  └──────────────────┴──────────────────────┴───────────────────┘
+
+  KEY INSIGHTS:
+  ─────────────
+  • taskwait waits for ALL child tasks created by the current task.
+    It acts like a barrier and cannot selectively wait for specific tasks.
+
+  • depend(in/out) defines data-based ordering constraints between tasks.
+    The runtime can execute any task as soon as its dependencies are met,
+    providing MORE scheduling flexibility.
+
+  • For the DAG  A → {B, C} → D:
+    - depend allows B and C to run in parallel after A finishes
+    - D starts immediately when both B and C are done
+    - The runtime has maximum scheduling freedom
+
+  • With taskwait, we achieve the same result but must carefully
+    structure the code with multiple taskwait points.
+
+  • For complex DAGs with many tasks and irregular dependencies,
+    depend() is significantly more powerful and avoids the need for
+    manually placing taskwait statements everywhere.
+

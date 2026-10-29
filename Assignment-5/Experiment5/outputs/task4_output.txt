@@ -1,0 +1,38 @@
+
+======================================================================
+  EXPERIMENT 5 — SECTION B, TASK 4
+  Independent Matrix Operations Using Sections
+  Operations: A+B, A-B, Transpose(A), Transpose(B)
+  Threads available: 32
+======================================================================
+
+  Testing 500 × 500...
+    Correctness: PASSED ✓
+    Sequential:  0.003599 s
+    Sections:    0.002888 s
+    Speedup:     1.25x
+    Efficiency:  0.0389
+
+  Testing 1000 × 1000...
+    Correctness: PASSED ✓
+    Sequential:  0.012743 s
+    Sections:    0.010953 s
+    Speedup:     1.16x
+    Efficiency:  0.0364
+
+  Testing 2000 × 2000...
+    Correctness: PASSED ✓
+    Sequential:  0.060220 s
+    Sections:    0.051903 s
+    Speedup:     1.16x
+    Efficiency:  0.0363
+
+======================================================================
+  Summary Table
+======================================================================
+Matrix Size    Seq Time (s)   Sec Time (s)   Speedup   Efficiency
+-----------------------------------------------------------------
+500x500            0.003599 s    0.002888 s      1.25x    0.0389
+1000x1000          0.012743 s    0.010953 s      1.16x    0.0364
+2000x2000          0.060220 s    0.051903 s      1.16x    0.0363
+[INFO] CSV saved to: results/raw/task4_results.csv

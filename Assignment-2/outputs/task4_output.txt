@@ -1,0 +1,12 @@
+=========================================================
+  Task 4: OpenMP Scheduling Strategies Analysis           
+=========================================================
+Matrix Size: 1000 x 1000 | Threads: 4
+
+Sequential Baseline Execution Time: 0.482609 seconds
+
+Scheduling Type      | Execution Time (s) | Speedup     
+-------------------------------------------------------
+Static               | 0.141267           | 3.4163      x
+Dynamic (chunk=16)   | 0.141185           | 3.4183      x
+Guided (chunk=16)    | 0.194478           | 2.4816      x

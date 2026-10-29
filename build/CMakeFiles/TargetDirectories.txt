@@ -1,0 +1,7 @@
+K:/HPC labs/build/CMakeFiles/matrix_vector.dir
+K:/HPC labs/build/CMakeFiles/matrix_matrix.dir
+K:/HPC labs/build/CMakeFiles/decomposition_comparison.dir
+K:/HPC labs/build/CMakeFiles/performance.dir
+K:/HPC labs/build/CMakeFiles/recursive_tasks.dir
+K:/HPC labs/build/CMakeFiles/edit_cache.dir
+K:/HPC labs/build/CMakeFiles/rebuild_cache.dir

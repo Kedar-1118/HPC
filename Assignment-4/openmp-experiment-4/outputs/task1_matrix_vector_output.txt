@@ -1,0 +1,404 @@
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 1
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.000480 s
+Running parallel version (1 threads)...
+  Parallel time:   0.000378 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 1
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.000378 seconds
+Speedup        : 1.27
+Efficiency     : 127.13%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 2
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.000407 s
+Running parallel version (2 threads)...
+  Parallel time:   0.000214 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 2
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.000214 seconds
+Speedup        : 1.91
+Efficiency     : 95.26%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 4
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.000427 s
+Running parallel version (4 threads)...
+  Parallel time:   0.000231 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 4
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.000231 seconds
+Speedup        : 1.85
+Efficiency     : 46.18%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 8
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.000419 s
+Running parallel version (8 threads)...
+  Parallel time:   0.000171 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 8
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.000171 seconds
+Speedup        : 2.45
+Efficiency     : 30.56%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 32
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.000455 s
+Running parallel version (32 threads)...
+  Parallel time:   0.000182 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 1024 x 1024
+Threads     : 32
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.000182 seconds
+Speedup        : 2.50
+Efficiency     : 7.80%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 1
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.002065 s
+Running parallel version (1 threads)...
+  Parallel time:   0.001899 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 1
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.001899 seconds
+Speedup        : 1.09
+Efficiency     : 108.75%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 2
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.002238 s
+Running parallel version (2 threads)...
+  Parallel time:   0.001292 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 2
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.001292 seconds
+Speedup        : 1.73
+Efficiency     : 86.63%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 4
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.002043 s
+Running parallel version (4 threads)...
+  Parallel time:   0.000732 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 4
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.000732 seconds
+Speedup        : 2.79
+Efficiency     : 69.78%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 8
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.002133 s
+Running parallel version (8 threads)...
+  Parallel time:   0.000474 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 8
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.000474 seconds
+Speedup        : 4.50
+Efficiency     : 56.20%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 32
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.002046 s
+Running parallel version (32 threads)...
+  Parallel time:   0.000507 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 2048 x 2048
+Threads     : 32
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.000507 seconds
+Speedup        : 4.03
+Efficiency     : 12.61%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 1
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.008488 s
+Running parallel version (1 threads)...
+  Parallel time:   0.008786 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 1
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.008786 seconds
+Speedup        : 0.97
+Efficiency     : 96.61%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 2
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.009463 s
+Running parallel version (2 threads)...
+  Parallel time:   0.005725 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 2
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.005725 seconds
+Speedup        : 1.65
+Efficiency     : 82.65%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 4
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.008960 s
+Running parallel version (4 threads)...
+  Parallel time:   0.003471 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 4
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.003471 seconds
+Speedup        : 2.58
+Efficiency     : 64.53%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 8
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.009539 s
+Running parallel version (8 threads)...
+  Parallel time:   0.003311 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 8
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.003311 seconds
+Speedup        : 2.88
+Efficiency     : 36.01%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Vector Multiplication (y = A * x)
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 32
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.009303 s
+Running parallel version (32 threads)...
+  Parallel time:   0.002637 s
+========================================
+ OpenMP Matrix-Vector Multiplication
+========================================
+Matrix Size : 4096 x 4096
+Threads     : 32
+Strategy    : Input Data Decomposition
+Schedule    : static
+
+Execution Time : 0.002637 seconds
+Speedup        : 3.53
+Efficiency     : 11.02%
+
+Verification   : PASS
+========================================
+

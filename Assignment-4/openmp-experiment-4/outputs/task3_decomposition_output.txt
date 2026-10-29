@@ -1,0 +1,589 @@
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 1
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.007268 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 1
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.007100 seconds
+Speedup        : 1.02
+Efficiency     : 102.36%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 1
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.007395 seconds
+Speedup        : 0.98
+Efficiency     : 98.28%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 1
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.007143 seconds
+Speedup        : 1.02
+Efficiency     : 101.75%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 2
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.007066 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 2
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.003666 seconds
+Speedup        : 1.93
+Efficiency     : 96.38%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 2
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.003955 seconds
+Speedup        : 1.79
+Efficiency     : 89.33%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 2
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.003696 seconds
+Speedup        : 1.91
+Efficiency     : 95.59%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 4
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.007097 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 4
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.001966 seconds
+Speedup        : 3.61
+Efficiency     : 90.23%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 4
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.002145 seconds
+Speedup        : 3.31
+Efficiency     : 82.72%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 4
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.001991 seconds
+Speedup        : 3.57
+Efficiency     : 89.14%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 8
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.007199 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 8
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.002022 seconds
+Speedup        : 3.56
+Efficiency     : 44.51%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 8
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.001976 seconds
+Speedup        : 3.64
+Efficiency     : 45.53%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 8
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.001959 seconds
+Speedup        : 3.68
+Efficiency     : 45.94%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 32
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.007032 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 32
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.001082 seconds
+Speedup        : 6.50
+Efficiency     : 20.31%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 32
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.001210 seconds
+Speedup        : 5.81
+Efficiency     : 18.16%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 256 x 256
+Threads     : 32
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.001244 seconds
+Speedup        : 5.65
+Efficiency     : 17.66%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 1
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.091948 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 1
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.089370 seconds
+Speedup        : 1.03
+Efficiency     : 102.89%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 1
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.096530 seconds
+Speedup        : 0.95
+Efficiency     : 95.25%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 1
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.090337 seconds
+Speedup        : 1.02
+Efficiency     : 101.78%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 2
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.069803 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 2
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.036165 seconds
+Speedup        : 1.93
+Efficiency     : 96.51%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 2
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.038946 seconds
+Speedup        : 1.79
+Efficiency     : 89.61%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 2
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.035982 seconds
+Speedup        : 1.94
+Efficiency     : 97.00%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 4
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.078722 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 4
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.020449 seconds
+Speedup        : 3.85
+Efficiency     : 96.24%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 4
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.022060 seconds
+Speedup        : 3.57
+Efficiency     : 89.21%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 4
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.020087 seconds
+Speedup        : 3.92
+Efficiency     : 97.98%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 8
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.069150 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 8
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.013363 seconds
+Speedup        : 5.17
+Efficiency     : 64.68%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 8
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.011654 seconds
+Speedup        : 5.93
+Efficiency     : 74.17%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 8
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.010622 seconds
+Speedup        : 6.51
+Efficiency     : 81.37%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Decomposition Strategy Comparison (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 32
+Benchmark   : 3 runs (median)
+
+Running sequential baseline...
+  Sequential time: 0.071447 s
+
+Running row-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 32
+Strategy    : row-wise
+Schedule    : static
+
+Execution Time : 0.007644 seconds
+Speedup        : 9.35
+Efficiency     : 29.21%
+
+Verification   : PASS
+========================================
+
+Running column-wise decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 32
+Strategy    : column-wise
+Schedule    : static
+
+Execution Time : 0.009195 seconds
+Speedup        : 7.77
+Efficiency     : 24.28%
+
+Verification   : PASS
+========================================
+
+Running block-2d decomposition...
+========================================
+ OpenMP Decomposition Comparison
+========================================
+Matrix Size : 512 x 512
+Threads     : 32
+Strategy    : block-2d
+Schedule    : static
+
+Execution Time : 0.007226 seconds
+Speedup        : 9.89
+Efficiency     : 30.90%
+
+Verification   : PASS
+========================================
+

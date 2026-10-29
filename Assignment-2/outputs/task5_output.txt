@@ -1,0 +1,18 @@
+=========================================================
+  Task 5: Optimization of Parallel Matrix Multiplication 
+=========================================================
+Matrix Size: 1000 x 1000 | System Max Threads: 32
+Sequential Execution Time (Ts): 0.417805 seconds
+
+--- Performance Comparison across Thread Counts (collapse(2)) ---
+Threads    | Execution Time (s) | Speedup      | Efficiency  
+-----------------------------------------------------------------
+1          | 0.389691           | 1.0721      x | 1.0721      
+2          | 0.187999           | 2.2224      x | 1.1112      
+4          | 0.144750           | 2.8864      x | 0.7216      
+8          | 0.103159           | 4.0501      x | 0.5063      
+32         | 0.139737           | 2.9899      x | 0.0934      
+
+--- Loop Collapsing Impact Analysis (Threads = 4) ---
+Standard Parallel loop: 0.156410 seconds
+Collapse(2) Parallel  : 0.141837 seconds (Speedup vs Standard: 1.10x)

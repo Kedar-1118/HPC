@@ -1,0 +1,559 @@
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 1
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007105 s
+Running parallel version (static, 1 threads)...
+  Parallel time:   0.007048 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 1
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.007048 seconds
+Speedup        : 1.01
+Efficiency     : 100.80%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 1
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007082 s
+Running parallel version (dynamic, 1 threads)...
+  Parallel time:   0.007187 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 1
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.007187 seconds
+Speedup        : 0.99
+Efficiency     : 98.53%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 2
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007107 s
+Running parallel version (static, 2 threads)...
+  Parallel time:   0.003663 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 2
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.003663 seconds
+Speedup        : 1.94
+Efficiency     : 97.02%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 2
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007126 s
+Running parallel version (dynamic, 2 threads)...
+  Parallel time:   0.003609 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 2
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.003609 seconds
+Speedup        : 1.97
+Efficiency     : 98.74%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 4
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007043 s
+Running parallel version (static, 4 threads)...
+  Parallel time:   0.002181 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 4
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.002181 seconds
+Speedup        : 3.23
+Efficiency     : 80.73%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 4
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007117 s
+Running parallel version (dynamic, 4 threads)...
+  Parallel time:   0.001993 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 4
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.001993 seconds
+Speedup        : 3.57
+Efficiency     : 89.25%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 8
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007057 s
+Running parallel version (static, 8 threads)...
+  Parallel time:   0.001979 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 8
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.001979 seconds
+Speedup        : 3.57
+Efficiency     : 44.58%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 8
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007102 s
+Running parallel version (dynamic, 8 threads)...
+  Parallel time:   0.001548 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 8
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.001548 seconds
+Speedup        : 4.59
+Efficiency     : 57.34%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 32
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007011 s
+Running parallel version (static, 32 threads)...
+  Parallel time:   0.001155 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 32
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.001155 seconds
+Speedup        : 6.07
+Efficiency     : 18.96%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 256 x 256
+Threads     : 32
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.007034 s
+Running parallel version (dynamic, 32 threads)...
+  Parallel time:   0.001129 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 256 x 256
+Threads     : 32
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.001129 seconds
+Speedup        : 6.23
+Efficiency     : 19.47%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 1
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.091265 s
+Running parallel version (static, 1 threads)...
+  Parallel time:   0.088490 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 1
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.088490 seconds
+Speedup        : 1.03
+Efficiency     : 103.14%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 1
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.091792 s
+Running parallel version (dynamic, 1 threads)...
+  Parallel time:   0.091558 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 1
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.091558 seconds
+Speedup        : 1.00
+Efficiency     : 100.26%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 2
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.108390 s
+Running parallel version (static, 2 threads)...
+  Parallel time:   0.054007 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 2
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.054007 seconds
+Speedup        : 2.01
+Efficiency     : 100.35%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 2
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.068374 s
+Running parallel version (dynamic, 2 threads)...
+  Parallel time:   0.036168 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 2
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.036168 seconds
+Speedup        : 1.89
+Efficiency     : 94.52%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 4
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.093940 s
+Running parallel version (static, 4 threads)...
+  Parallel time:   0.024379 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 4
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.024379 seconds
+Speedup        : 3.85
+Efficiency     : 96.33%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 4
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.067873 s
+Running parallel version (dynamic, 4 threads)...
+  Parallel time:   0.017940 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 4
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.017940 seconds
+Speedup        : 3.78
+Efficiency     : 94.58%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 8
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.072057 s
+Running parallel version (static, 8 threads)...
+  Parallel time:   0.014655 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 8
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.014655 seconds
+Speedup        : 4.92
+Efficiency     : 61.46%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 8
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.067625 s
+Running parallel version (dynamic, 8 threads)...
+  Parallel time:   0.009614 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 8
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.009614 seconds
+Speedup        : 7.03
+Efficiency     : 87.92%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 32
+Schedule    : static
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.081685 s
+Running parallel version (static, 32 threads)...
+  Parallel time:   0.010019 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 32
+Strategy    : Output Data Decomposition
+Schedule    : static
+
+Execution Time : 0.010019 seconds
+Speedup        : 8.15
+Efficiency     : 25.48%
+
+Verification   : PASS
+========================================
+
+
+========================================
+ Matrix-Matrix Multiplication (C = A * B)
+========================================
+Matrix Size : 512 x 512
+Threads     : 32
+Schedule    : dynamic
+Benchmark   : 3 runs (median)
+
+Running sequential version...
+  Sequential time: 0.089188 s
+Running parallel version (dynamic, 32 threads)...
+  Parallel time:   0.008427 s
+========================================
+ OpenMP Matrix-Matrix Multiplication
+========================================
+Matrix Size : 512 x 512
+Threads     : 32
+Strategy    : Output Data Decomposition
+Schedule    : dynamic
+
+Execution Time : 0.008427 seconds
+Speedup        : 10.58
+Efficiency     : 33.07%
+
+Verification   : PASS
+========================================
+

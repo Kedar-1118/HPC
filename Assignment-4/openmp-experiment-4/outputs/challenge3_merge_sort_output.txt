@@ -1,0 +1,269 @@
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 1000000 elements
+Threads     : 1
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.072744 s
+Running parallel merge sort (1 threads)...
+  Parallel time:   0.072517 s
+========================================
+ Results
+========================================
+Sequential time : 0.072744 s
+Parallel time   : 0.072517 s
+Speedup         : 1.00
+Efficiency      : 100.31%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 1000000 elements
+Threads     : 2
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.072157 s
+Running parallel merge sort (2 threads)...
+  Parallel time:   0.040150 s
+========================================
+ Results
+========================================
+Sequential time : 0.072157 s
+Parallel time   : 0.040150 s
+Speedup         : 1.80
+Efficiency      : 89.86%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 1000000 elements
+Threads     : 4
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.074214 s
+Running parallel merge sort (4 threads)...
+  Parallel time:   0.028571 s
+========================================
+ Results
+========================================
+Sequential time : 0.074214 s
+Parallel time   : 0.028571 s
+Speedup         : 2.60
+Efficiency      : 64.94%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 1000000 elements
+Threads     : 8
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.072074 s
+Running parallel merge sort (8 threads)...
+  Parallel time:   0.019320 s
+========================================
+ Results
+========================================
+Sequential time : 0.072074 s
+Parallel time   : 0.019320 s
+Speedup         : 3.73
+Efficiency      : 46.63%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 1000000 elements
+Threads     : 32
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.073389 s
+Running parallel merge sort (32 threads)...
+  Parallel time:   0.013796 s
+========================================
+ Results
+========================================
+Sequential time : 0.073389 s
+Parallel time   : 0.013796 s
+Speedup         : 5.32
+Efficiency      : 16.62%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 5000000 elements
+Threads     : 1
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.406705 s
+Running parallel merge sort (1 threads)...
+  Parallel time:   0.405754 s
+========================================
+ Results
+========================================
+Sequential time : 0.406705 s
+Parallel time   : 0.405754 s
+Speedup         : 1.00
+Efficiency      : 100.23%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 5000000 elements
+Threads     : 2
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.408124 s
+Running parallel merge sort (2 threads)...
+  Parallel time:   0.218665 s
+========================================
+ Results
+========================================
+Sequential time : 0.408124 s
+Parallel time   : 0.218665 s
+Speedup         : 1.87
+Efficiency      : 93.32%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 5000000 elements
+Threads     : 4
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.405846 s
+Running parallel merge sort (4 threads)...
+  Parallel time:   0.155952 s
+========================================
+ Results
+========================================
+Sequential time : 0.405846 s
+Parallel time   : 0.155952 s
+Speedup         : 2.60
+Efficiency      : 65.06%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 5000000 elements
+Threads     : 8
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.407662 s
+Running parallel merge sort (8 threads)...
+  Parallel time:   0.111341 s
+========================================
+ Results
+========================================
+Sequential time : 0.407662 s
+Parallel time   : 0.111341 s
+Speedup         : 3.66
+Efficiency      : 45.77%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+
+
+========================================
+ OpenMP Tasks — Parallel Merge Sort
+========================================
+Array Size  : 5000000 elements
+Threads     : 32
+Cutoff      : 10000 elements
+Benchmark   : 3 runs (median)
+
+Running sequential merge sort...
+  Sequential time: 0.413669 s
+Running parallel merge sort (32 threads)...
+  Parallel time:   0.067976 s
+========================================
+ Results
+========================================
+Sequential time : 0.413669 s
+Parallel time   : 0.067976 s
+Speedup         : 6.09
+Efficiency      : 19.02%
+
+Sequential sorted: YES
+Parallel sorted  : YES
+Results match    : YES
+Verification     : PASS
+========================================
+

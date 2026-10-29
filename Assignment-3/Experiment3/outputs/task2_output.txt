@@ -1,0 +1,37 @@
+
+======================================================================
+  EXPERIMENT 3 — DOT PRODUCT & THREAD SCALING
+  Vector Size: 10000000
+  Max Threads Detected: 32
+======================================================================
+
+======================================================================
+  SECTION A — DOT PRODUCT (Sequential vs Reduction)
+======================================================================
+
+Method                   Time (s)          Speedup     Efficiency  
+-------------------------------------------------------------------
+Sequential                      0.008905 s
+OpenMP Reduction                0.091876 s        0.10x    0.0030
+
+  Sequential Result = 25505880809.9206
+  Parallel Result   = 25505880809.9224
+  Match: CORRECT ✓
+
+======================================================================
+  SECTION B — THREAD SCALING TABLE
+======================================================================
+
+Threads   Dot Time (s)      Prefix Time (s)   Dot Speedup     Prefix Speedup  Dot Effic.    Pfx Effic.    
+----------------------------------------------------------------------------------------------------------
+1               0.009961          0.058587          0.00x          1.41x       0.0000       1.4062
+2               0.004819          0.040174          0.00x          2.05x       0.0000       1.0253
+4               0.003520          0.042787          0.00x          1.93x       0.0000       0.4813
+8               0.021499          0.048203          0.00x          1.71x       0.0000       0.2136
+32              0.059313          0.118259          0.00x          0.70x       0.0000       0.0218
+
+  Baseline Sequential Dot Product Time:  0.000000 s
+  Baseline Sequential Prefix Sum Time:   0.082382 s
+[INFO] CSV saved to: outputs/thread_scaling.csv
+
+[INFO] Run 'python3 generate_graphs.py' to create plots.

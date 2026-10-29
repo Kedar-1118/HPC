@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "OpenMP::OpenMP_CXX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OpenMP__OpenMP_CXX-Debug-1fd7c040fb9f72d79806.json",
+					"name" : "OpenMP::OpenMP_CXX",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "OpenMP_Experiment4",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "decomposition_comparison::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-decomposition_comparison-Debug-66d49fceda5e96117383.json",
+					"name" : "decomposition_comparison",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matrix_matrix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matrix_matrix-Debug-52d86dbbc45c31318a09.json",
+					"name" : "matrix_matrix",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "matrix_vector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-matrix_vector-Debug-8165e11df64accd7d33f.json",
+					"name" : "matrix_vector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "performance::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-performance-Debug-823a94e8cad94090b8cd.json",
+					"name" : "performance",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "recursive_tasks::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-recursive_tasks-Debug-38545ee93018dc1ec001.json",
+					"name" : "recursive_tasks",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "K:/HPC labs/build",
+		"source" : "K:/HPC labs/Assignment-4/openmp-experiment-4"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

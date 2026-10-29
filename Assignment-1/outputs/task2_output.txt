@@ -1,0 +1,180 @@
+=================================================================
+ RUNNING TASK 2 WITH OMP_NUM_THREADS=2
+=================================================================
+=========================================================
+  Task 2: OpenMP Thread Creation & Square Calculation
+  Computing squares for first 1000 whole numbers (0..999)
+=========================================================
+
+[Sequential Execution]
+  Execution Time: 0.024693 seconds (24.693 ms)
+
+[Parallel Execution Setup]
+  Total threads created in parallel team: 2
+
+  -> Thread ID  0 active out of  2 threads
+  -> Thread ID  1 active out of  2 threads
+
+[Workload Distribution Among Threads]
+  Thread  0 processed 500 numbers (e.g. elements start at 0^2 = 0)
+  Thread  1 processed 500 numbers (e.g. elements start at 500^2 = 250000)
+
+[Sample Verification Outputs]
+  First 5 whole numbers:  0^2=0  1^2=1  2^2=4  3^2=9  4^2=16  
+  Last 5 whole numbers:   995^2=990025  996^2=992016  997^2=994009  998^2=996004  999^2=998001  
+
+=========================================================
+  PERFORMANCE RESULTS SUMMARY (2 Threads)
+=========================================================
+  Verification Status:       PASSED (Results Match)
+  Sequential Time (T_seq):   0.024693 seconds (24.693 ms)
+  Parallel Time   (T_par):   0.062189 seconds (62.189 ms)
+  Calculated Speedup (S):    0.3971 x
+=========================================================
+
+=================================================================
+ RUNNING TASK 2 WITH OMP_NUM_THREADS=4
+=================================================================
+=========================================================
+  Task 2: OpenMP Thread Creation & Square Calculation
+  Computing squares for first 1000 whole numbers (0..999)
+=========================================================
+
+[Sequential Execution]
+  Execution Time: 0.022449 seconds (22.449 ms)
+
+[Parallel Execution Setup]
+  Total threads created in parallel team: 4
+
+  -> Thread ID  1 active out of  4 threads
+  -> Thread ID  0 active out of  4 threads
+  -> Thread ID  3 active out of  4 threads
+  -> Thread ID  2 active out of  4 threads
+
+[Workload Distribution Among Threads]
+  Thread  0 processed 250 numbers (e.g. elements start at 0^2 = 0)
+  Thread  1 processed 250 numbers (e.g. elements start at 250^2 = 62500)
+  Thread  2 processed 250 numbers (e.g. elements start at 500^2 = 250000)
+  Thread  3 processed 250 numbers (e.g. elements start at 750^2 = 562500)
+
+[Sample Verification Outputs]
+  First 5 whole numbers:  0^2=0  1^2=1  2^2=4  3^2=9  4^2=16  
+  Last 5 whole numbers:   995^2=990025  996^2=992016  997^2=994009  998^2=996004  999^2=998001  
+
+=========================================================
+  PERFORMANCE RESULTS SUMMARY (4 Threads)
+=========================================================
+  Verification Status:       PASSED (Results Match)
+  Sequential Time (T_seq):   0.022449 seconds (22.449 ms)
+  Parallel Time   (T_par):   0.120807 seconds (120.807 ms)
+  Calculated Speedup (S):    0.1858 x
+=========================================================
+
+=================================================================
+ RUNNING TASK 2 WITH OMP_NUM_THREADS=8
+=================================================================
+=========================================================
+  Task 2: OpenMP Thread Creation & Square Calculation
+  Computing squares for first 1000 whole numbers (0..999)
+=========================================================
+
+[Sequential Execution]
+  Execution Time: 0.024649 seconds (24.649 ms)
+
+[Parallel Execution Setup]
+  Total threads created in parallel team: 8
+
+  -> Thread ID  7 active out of  8 threads
+  -> Thread ID  5 active out of  8 threads
+  -> Thread ID  0 active out of  8 threads
+  -> Thread ID  2 active out of  8 threads
+  -> Thread ID  4 active out of  8 threads
+  -> Thread ID  1 active out of  8 threads
+  -> Thread ID  3 active out of  8 threads
+  -> Thread ID  6 active out of  8 threads
+
+[Workload Distribution Among Threads]
+  Thread  0 processed 125 numbers (e.g. elements start at 0^2 = 0)
+  Thread  1 processed 125 numbers (e.g. elements start at 125^2 = 15625)
+  Thread  2 processed 125 numbers (e.g. elements start at 250^2 = 62500)
+  Thread  3 processed 125 numbers (e.g. elements start at 375^2 = 140625)
+  Thread  4 processed 125 numbers (e.g. elements start at 500^2 = 250000)
+  Thread  5 processed 125 numbers (e.g. elements start at 625^2 = 390625)
+  Thread  6 processed 125 numbers (e.g. elements start at 750^2 = 562500)
+  Thread  7 processed 125 numbers (e.g. elements start at 875^2 = 765625)
+
+[Sample Verification Outputs]
+  First 5 whole numbers:  0^2=0  1^2=1  2^2=4  3^2=9  4^2=16  
+  Last 5 whole numbers:   995^2=990025  996^2=992016  997^2=994009  998^2=996004  999^2=998001  
+
+=========================================================
+  PERFORMANCE RESULTS SUMMARY (8 Threads)
+=========================================================
+  Verification Status:       PASSED (Results Match)
+  Sequential Time (T_seq):   0.024649 seconds (24.649 ms)
+  Parallel Time   (T_par):   0.270434 seconds (270.434 ms)
+  Calculated Speedup (S):    0.0911 x
+=========================================================
+
+=================================================================
+ RUNNING TASK 2 WITH OMP_NUM_THREADS=16
+=================================================================
+=========================================================
+  Task 2: OpenMP Thread Creation & Square Calculation
+  Computing squares for first 1000 whole numbers (0..999)
+=========================================================
+
+[Sequential Execution]
+  Execution Time: 0.027792 seconds (27.792 ms)
+
+[Parallel Execution Setup]
+  Total threads created in parallel team: 16
+
+  -> Thread ID 12 active out of 16 threads
+  -> Thread ID  3 active out of 16 threads
+  -> Thread ID 10 active out of 16 threads
+  -> Thread ID  8 active out of 16 threads
+  -> Thread ID  0 active out of 16 threads
+  -> Thread ID 15 active out of 16 threads
+  -> Thread ID  1 active out of 16 threads
+  -> Thread ID  4 active out of 16 threads
+  -> Thread ID  7 active out of 16 threads
+  -> Thread ID 13 active out of 16 threads
+  -> Thread ID  9 active out of 16 threads
+  -> Thread ID  5 active out of 16 threads
+  -> Thread ID  2 active out of 16 threads
+  -> Thread ID  6 active out of 16 threads
+  -> Thread ID 14 active out of 16 threads
+  -> Thread ID 11 active out of 16 threads
+
+[Workload Distribution Among Threads]
+  Thread  0 processed  63 numbers (e.g. elements start at 0^2 = 0)
+  Thread  1 processed  63 numbers (e.g. elements start at 62^2 = 3844)
+  Thread  2 processed  63 numbers (e.g. elements start at 124^2 = 15376)
+  Thread  3 processed  63 numbers (e.g. elements start at 186^2 = 34596)
+  Thread  4 processed  63 numbers (e.g. elements start at 248^2 = 61504)
+  Thread  5 processed  63 numbers (e.g. elements start at 310^2 = 96100)
+  Thread  6 processed  63 numbers (e.g. elements start at 372^2 = 138384)
+  Thread  7 processed  63 numbers (e.g. elements start at 434^2 = 188356)
+  Thread  8 processed  62 numbers (e.g. elements start at 496^2 = 246016)
+  Thread  9 processed  62 numbers (e.g. elements start at 558^2 = 311364)
+  Thread 10 processed  62 numbers (e.g. elements start at 620^2 = 384400)
+  Thread 11 processed  62 numbers (e.g. elements start at 682^2 = 465124)
+  Thread 12 processed  62 numbers (e.g. elements start at 744^2 = 553536)
+  Thread 13 processed  62 numbers (e.g. elements start at 806^2 = 649636)
+  Thread 14 processed  62 numbers (e.g. elements start at 868^2 = 753424)
+  Thread 15 processed  62 numbers (e.g. elements start at 930^2 = 864900)
+
+[Sample Verification Outputs]
+  First 5 whole numbers:  0^2=0  1^2=1  2^2=4  3^2=9  4^2=16  
+  Last 5 whole numbers:   995^2=990025  996^2=992016  997^2=994009  998^2=996004  999^2=998001  
+
+=========================================================
+  PERFORMANCE RESULTS SUMMARY (16 Threads)
+=========================================================
+  Verification Status:       PASSED (Results Match)
+  Sequential Time (T_seq):   0.027792 seconds (27.792 ms)
+  Parallel Time   (T_par):   0.688834 seconds (688.834 ms)
+  Calculated Speedup (S):    0.0403 x
+=========================================================
+

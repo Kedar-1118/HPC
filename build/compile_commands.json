@@ -1,0 +1,32 @@
+[
+{
+  "directory": "K:/HPC labs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/matrix_vector.dir/includes_CXX.rsp  -O2 -Wall -Wextra -g -std=gnu++17 -fopenmp -o CMakeFiles\\matrix_vector.dir\\src\\matrix_vector.cpp.obj -c \"K:\\HPC labs\\Assignment-4\\openmp-experiment-4\\src\\matrix_vector.cpp\"",
+  "file": "K:/HPC labs/Assignment-4/openmp-experiment-4/src/matrix_vector.cpp",
+  "output": "CMakeFiles/matrix_vector.dir/src/matrix_vector.cpp.obj"
+},
+{
+  "directory": "K:/HPC labs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/matrix_matrix.dir/includes_CXX.rsp  -O2 -Wall -Wextra -g -std=gnu++17 -fopenmp -o CMakeFiles\\matrix_matrix.dir\\src\\matrix_matrix.cpp.obj -c \"K:\\HPC labs\\Assignment-4\\openmp-experiment-4\\src\\matrix_matrix.cpp\"",
+  "file": "K:/HPC labs/Assignment-4/openmp-experiment-4/src/matrix_matrix.cpp",
+  "output": "CMakeFiles/matrix_matrix.dir/src/matrix_matrix.cpp.obj"
+},
+{
+  "directory": "K:/HPC labs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/decomposition_comparison.dir/includes_CXX.rsp  -O2 -Wall -Wextra -g -std=gnu++17 -fopenmp -o CMakeFiles\\decomposition_comparison.dir\\src\\decomposition_comparison.cpp.obj -c \"K:\\HPC labs\\Assignment-4\\openmp-experiment-4\\src\\decomposition_comparison.cpp\"",
+  "file": "K:/HPC labs/Assignment-4/openmp-experiment-4/src/decomposition_comparison.cpp",
+  "output": "CMakeFiles/decomposition_comparison.dir/src/decomposition_comparison.cpp.obj"
+},
+{
+  "directory": "K:/HPC labs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/performance.dir/includes_CXX.rsp  -O2 -Wall -Wextra -g -std=gnu++17 -fopenmp -o CMakeFiles\\performance.dir\\src\\performance.cpp.obj -c \"K:\\HPC labs\\Assignment-4\\openmp-experiment-4\\src\\performance.cpp\"",
+  "file": "K:/HPC labs/Assignment-4/openmp-experiment-4/src/performance.cpp",
+  "output": "CMakeFiles/performance.dir/src/performance.cpp.obj"
+},
+{
+  "directory": "K:/HPC labs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/recursive_tasks.dir/includes_CXX.rsp  -O2 -Wall -Wextra -g -std=gnu++17 -fopenmp -o CMakeFiles\\recursive_tasks.dir\\src\\recursive_tasks.cpp.obj -c \"K:\\HPC labs\\Assignment-4\\openmp-experiment-4\\src\\recursive_tasks.cpp\"",
+  "file": "K:/HPC labs/Assignment-4/openmp-experiment-4/src/recursive_tasks.cpp",
+  "output": "CMakeFiles/recursive_tasks.dir/src/recursive_tasks.cpp.obj"
+}
+]

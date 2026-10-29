@@ -1,0 +1,21 @@
+=========================================================
+  Task 2: Parallel Loop Execution (Array Sum) OpenMP      
+=========================================================
+
+--- Experiments for N = 10000 ---
+N =      10000 | Threads =  1 | Seq Time = 0.000100s | Par Time = 0.000100s | Speedup = 1.00x | Sum = 10000
+N =      10000 | Threads =  2 | Seq Time = 0.000100s | Par Time = 0.000100s | Speedup = 1.00x | Sum = 10000
+N =      10000 | Threads =  4 | Seq Time = 0.000100s | Par Time = 0.000100s | Speedup = 1.00x | Sum = 10000
+N =      10000 | Threads =  8 | Seq Time = 0.000100s | Par Time = 0.000100s | Speedup = 1.00x | Sum = 10000
+
+--- Experiments for N = 1000000 ---
+N =    1000000 | Threads =  1 | Seq Time = 0.000100s | Par Time = 0.000891s | Speedup = 0.11x | Sum = 1000000
+N =    1000000 | Threads =  2 | Seq Time = 0.000100s | Par Time = 0.000361s | Speedup = 0.28x | Sum = 1000000
+N =    1000000 | Threads =  4 | Seq Time = 0.000100s | Par Time = 0.000180s | Speedup = 0.55x | Sum = 1000000
+N =    1000000 | Threads =  8 | Seq Time = 0.000100s | Par Time = 0.000100s | Speedup = 1.00x | Sum = 1000000
+
+--- Experiments for N = 10000000 ---
+N =   10000000 | Threads =  1 | Seq Time = 0.000100s | Par Time = 0.006778s | Speedup = 0.01x | Sum = 10000000
+N =   10000000 | Threads =  2 | Seq Time = 0.000100s | Par Time = 0.003529s | Speedup = 0.03x | Sum = 10000000
+N =   10000000 | Threads =  4 | Seq Time = 0.000100s | Par Time = 0.002835s | Speedup = 0.04x | Sum = 10000000
+N =   10000000 | Threads =  8 | Seq Time = 0.000100s | Par Time = 0.004020s | Speedup = 0.02x | Sum = 10000000

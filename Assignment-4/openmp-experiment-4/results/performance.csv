@@ -1,0 +1,6 @@
+size,threads,strategy,schedule,time,speedup,efficiency
+512,1,row-wise,static,0.101326,1.0034,1.0034
+512,2,row-wise,static,0.048250,2.1071,1.0536
+512,4,row-wise,static,0.025556,3.9783,0.9946
+512,8,row-wise,static,0.014311,7.1041,0.8880
+512,32,row-wise,static,0.010014,10.1528,0.3173

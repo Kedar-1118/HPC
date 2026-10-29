@@ -1,0 +1,3 @@
+Version,Time_s,Speedup,Efficiency
+Sequential,0.015643,1.000000,1.000000
+Sections,0.009291,1.683653,0.052614

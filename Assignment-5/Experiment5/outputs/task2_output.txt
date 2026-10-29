@@ -1,0 +1,47 @@
+
+======================================================================
+  EXPERIMENT 5 — SECTION A, TASK 2
+  Sections vs Parallel For Comparison
+  Array size: N = 10000000 | Threads: 32
+======================================================================
+
+======================================================================
+  Correctness Verification
+======================================================================
+  Sequential:     Sum=5004787883  Max=1000  Min=1  Even=4999981
+  Parallel For:   Sum=5004787883  Max=1000  Min=1  Even=4999981  [MATCH ✓]
+  Sections:       Sum=5004787883  Max=1000  Min=1  Even=4999981  [MATCH ✓]
+
+  Correctness Verification: PASSED
+
+======================================================================
+  Performance Comparison
+======================================================================
+Method                   Time (s)          Speedup   Efficiency
+---------------------------------------------------------------
+Sequential                      0.031467 s      1.00x    1.0000
+Parallel For                    0.008671 s      3.63x    0.1134
+Parallel Sections               0.012211 s      2.58x    0.0805
+
+======================================================================
+  Feature Comparison
+======================================================================
+
+  Feature             | Parallel For              | Parallel Sections
+  --------------------+---------------------------+---------------------------
+  Type of parallelism | Data parallelism          | Task parallelism
+  Work distribution   | Automatic chunk splitting | One section per thread
+  Array traversals    | 1 (all ops per iteration) | 4 (one per section)
+  Cache behaviour     | Better (single traversal) | Worse (4 traversals)
+  Suitable for        | Regular loop-based work   | Fixed independent tasks
+  Scalability         | Scales with array size    | Limited to # of sections
+  Overhead            | Low (reduction is fast)   | Higher (4 full scans)
+
+  ANALYSIS: For this problem, parallel for with reduction is more
+  natural because all four operations iterate over the same array.
+  A single traversal with reductions exploits cache locality and
+  achieves better speedup. Sections are better suited when the
+  independent tasks perform fundamentally different computations
+  that cannot be combined into a single loop.
+
+[INFO] CSV saved to: results/raw/task2_results.csv

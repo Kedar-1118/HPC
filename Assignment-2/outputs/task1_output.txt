@@ -1,0 +1,26 @@
+=========================================================
+  Task 1: Thread Creation and Identification using OpenMP 
+=========================================================
+
+--- Executing Parallel Matrix Addition with 2 Threads ---
+[Parallel Region] Thread ID: 0 / Total Threads: 2
+[Parallel Region] Thread ID: 1 / Total Threads: 2
+Matrix Addition completed in 0.002627 seconds (Status: PASSED)
+
+--- Executing Parallel Matrix Addition with 4 Threads ---
+[Parallel Region] Thread ID: 0 / Total Threads: 4
+[Parallel Region] Thread ID: 2 / Total Threads: 4
+[Parallel Region] Thread ID: 1 / Total Threads: 4
+[Parallel Region] Thread ID: 3 / Total Threads: 4
+Matrix Addition completed in 0.001133 seconds (Status: PASSED)
+
+--- Executing Parallel Matrix Addition with 8 Threads ---
+[Parallel Region] Thread ID: 7 / Total Threads: 8
+[Parallel Region] Thread ID: 2 / Total Threads: 8
+[Parallel Region] Thread ID: 6 / Total Threads: 8
+[Parallel Region] Thread ID: 3 / Total Threads: 8
+[Parallel Region] Thread ID: 0 / Total Threads: 8
+[Parallel Region] Thread ID: 1 / Total Threads: 8
+[Parallel Region] Thread ID: 4 / Total Threads: 8
+[Parallel Region] Thread ID: 5 / Total Threads: 8
+Matrix Addition completed in 0.000865 seconds (Status: PASSED)

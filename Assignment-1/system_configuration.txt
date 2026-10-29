@@ -1,0 +1,37 @@
+=================================================================
+         HPC LAB ASSIGNMENT 1 - SYSTEM CONFIGURATION REPORT      
+=================================================================
+Generated on: Wed Aug 12 05:35:10 UTC 2026
+-----------------------------------------------------------------
+
+[1] PROCESSOR MODEL
+-------------------
+Model Name: 13th Gen Intel(R) Core(TM) i9-13900HX
+
+[2] CPU CORES & LOGICAL PROCESSORS
+----------------------------------
+Physical Cores:     16
+Logical Processors: 32
+Threads per Core:   2
+
+[3] SYSTEM RAM
+--------------
+Total Memory (RAM): 15Gi (Available: 14Gi)
+
+[4] GCC COMPILER VERSION
+------------------------
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+
+[5] OPENMP VERIFICATION
+-----------------------
+OpenMP Support: VERIFIED & WORKING
+OpenMP is supported! Version spec date: 201511 (Active Threads: 32)
+
+[6] LINUX KERNEL VERSION & OS
+-----------------------------
+Kernel Version: 6.6.87.2-microsoft-standard-WSL2
+Full System:   Linux KD 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+OS Distribution: Ubuntu 24.04.4 LTS
+Environment:   Windows Subsystem for Linux (WSL)
+
+=================================================================

@@ -1,0 +1,43 @@
+
+======================================================================
+  EXPERIMENT 5 — SECTION A, TASK 1
+  Independent Tasks Using OpenMP Sections
+  Array size: N = 10000000 | Threads available: 32
+======================================================================
+
+  Generating random array of 10000000 elements...
+
+======================================================================
+  Computed Values
+======================================================================
+
+  Sequential Results:
+    Sum     = 505088561.8897
+    Maximum = 100.0000
+    Minimum = 1.0000
+    Average = 50.5089
+
+  Parallel Sections Results:
+    Sum     = 505088561.8897
+    Maximum = 100.0000
+    Minimum = 1.0000
+    Average = 50.5089
+
+======================================================================
+  Correctness Verification
+======================================================================
+  Sum       MATCH ✓
+  Maximum   MATCH ✓
+  Minimum   MATCH ✓
+  Average   MATCH ✓
+
+  Correctness Verification: PASSED
+
+======================================================================
+  Performance
+======================================================================
+Version                  Time (s)          Speedup   Efficiency
+---------------------------------------------------------------
+Sequential                      0.015643 s      1.00x    1.0000
+OpenMP Sections                 0.009291 s      1.68x    0.0526
+[INFO] CSV saved to: results/raw/task1_results.csv

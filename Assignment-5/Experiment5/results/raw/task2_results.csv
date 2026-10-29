@@ -1,0 +1,4 @@
+Method,Time_s,Speedup
+Sequential,0.031467,1.000000
+ParallelFor,0.008671,3.629105
+Sections,0.012211,2.576867

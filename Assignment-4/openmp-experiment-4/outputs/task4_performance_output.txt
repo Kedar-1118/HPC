@@ -1,0 +1,22 @@
+========================================
+ Performance Analysis — Scalability Study
+========================================
+Matrix Size   : 512 x 512
+Max Threads   : 32
+Strategy      : Row-wise (static)
+Benchmark     : 3 runs (median)
+
+Computing baseline (1 thread)...
+  Baseline time (T1): 0.101669 s
+
+   Threads       Time (s)     Speedup     Efficiency      Verified
+------------------------------------------------------------------
+         1       0.101326        1.00        100.34%          PASS
+         2       0.048250        2.11        105.36%          PASS
+         4       0.025556        3.98         99.46%          PASS
+         8       0.014311        7.10         88.80%          PASS
+        32       0.010014       10.15         31.73%          PASS
+
+========================================
+ Results saved to results/performance.csv
+========================================

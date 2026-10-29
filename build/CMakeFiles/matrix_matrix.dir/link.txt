@@ -1,0 +1,3 @@
+C:\mingw64\bin\cmake.exe -E rm -f CMakeFiles\matrix_matrix.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\matrix_matrix.dir/objects.a @CMakeFiles\matrix_matrix.dir\objects1.rsp
+C:\mingw64\bin\g++.exe  -O2 -Wall -Wextra -g -Wl,--whole-archive CMakeFiles\matrix_matrix.dir/objects.a -Wl,--no-whole-archive -o bin\matrix_matrix.exe -Wl,--out-implib,libmatrix_matrix.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\matrix_matrix.dir\linkLibs.rsp
